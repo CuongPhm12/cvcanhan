@@ -1,0 +1,14 @@
+table {
+    font-family: Arial, sans-serif;/* xác định font chữ hiển thị bảng*/
+    border-collapse: collapse;/*viền bảng hiện thỉ nét mảnh*/
+    width: 100%;/*độ rộng 100%*/
+}
+
+th, td {
+    border: 1px solid #dddddd;/*tạo đường viền cho bảng*/
+    text-align: left;/* nội dungcăn trái từng ô*/
+    padding: 8px;/*các ô cách nhau 8px*/
+}
+#id1 tr:nth-child(odd){
+    background-color: #956565;/*xác định màu nền */
+}
