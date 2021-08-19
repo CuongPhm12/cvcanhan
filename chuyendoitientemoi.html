@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<form action="">-->
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount"></td>
+            <td><select name="" id="from">
+                <option value="1" >Vietnam</option>
+                <option value="23000">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="" id="to">
+                    <option value="23000" >USD</option>
+                    <option value="1" >Vietnam</option>
+                </select>
+            </td>
+            <td><button onclick="convert();">Convert</button></td>
+        </tr>
+    </table>
+    <p id = "result">Result:</p>
+<!--</form>-->
+<script>
+    function convert(){
+        // B1: lấy dữ liệu
+// số tiền : amount (số nguyên)
+// đơn vị cần chuyển đổi:from(số) VND:1, USD: 23000
+// đơn vị chuyển đổi:to(số) USD: 23000, VND:1
+        let amount = document.getElementById("amount").value;
+        amount = parseInt(amount);
+        let from = document.getElementById("from").value;
+        from = parseInt(from);
+        let to = document.getElementById("to").value;
+        to = parseInt(to);
+        // B2:tính toán
+        // kết quả: result(số nguyên)
+        // result = amount*from/to
+        let result = amount*from/to;
+        // B3:hiện thị ra kết quả
+        // document....innerText
+        document.getElementById("result").innerText= result;
+    }
+</script>
+</body>
+</html>
