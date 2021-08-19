@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<!--<form action="">-->
+<input type="text" id="num1" placeholder="Nhập vào số 1"><br>
+<input type="text" id="num2" placeholder="Nhập vào số 2">
+<br>
+<button onclick="phepCong();">Cộng</button>
+<button onclick="phepTru();">Trừ</button>
+<button onclick="phepNhan();">Nhân</button>
+<button onclick="phepChia();">Chia</button>
+<p id="result"></p>
+<!--</form>-->
+<script>
+    //phép cộng
+  phepCong = function (){
+    let num1 = document.getElementById("num1").value;
+    num1 = parseInt(num1);
+    let num2 = document.getElementById("num2").value;
+    num2 = parseInt(num2);
+    let result = num1 + num2;
+    document.getElementById("result").innerText = result;
+  }
+    //Phép trừ
+  phepTru = function (){
+    let num1 = document.getElementById("num1").value;
+    num1 = parseInt(num1);
+    let num2 = document.getElementById("num2").value;
+    num2 = parseInt(num2);
+    let result = num1 - num2;
+    document.getElementById("result").innerText = result;
+  }
+  //Phép nhân
+  phepNhan = function (){
+    let num1 = document.getElementById("num1").value;
+    num1 = parseInt(num1);
+    let num2 = document.getElementById("num2").value;
+    num2 = parseInt(num2);
+    let result = num1 * num2;
+    document.getElementById("result").innerText = result;
+  }
+  //Phép chia
+  phepChia = function (){
+    let num1 = document.getElementById("num1").value;
+    num1 = parseInt(num1);
+    let num2 = document.getElementById("num2").value;
+    num2 = parseInt(num2);
+    let result = num1 / num2;
+    document.getElementById("result").innerText = result;
+  }
+</script>
+</body>
+</html>
